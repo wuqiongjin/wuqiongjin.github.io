@@ -1,7 +1,7 @@
 /* 字体设置 */
 @font-face {
   font-family: ZhuZiAYuanJWD;
-  src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
+  src: url(/fonts/ZhuZiAWan.woff2);
   font-display: swap;
   font-weight: lighter;
 }
@@ -63,18 +63,35 @@ h1.post-title {
 
 /* 鼠标样式 */
 body {
-  cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur),
-    default;
+  cursor: url(/img/cursor-default.cur), default;
 }
 a,
 img {
-  cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
-    default;
+  cursor: url(/img/cursor-pointer.cur), default;
 }
 
 /* 代码框主题(圆角) */
 #article-container figure.highlight {
   border-radius: 10px;
+}
+
+.announcement_content a {
+  color: #49b1f5;
+  font-weight: 600;
+}
+
+.hexo-douban-page-cur {
+  display: inline-block;
+  min-width: 1.2em;
+  outline: none;
+  border-bottom: 1px dashed currentColor;
+  cursor: text;
+}
+
+.comment-offline-hint {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.6;
 }
 
 
